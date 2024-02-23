@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Prac1</string>
+    <string name="text">Текст</string>
+    <string name="hint">Подсказка</string>
+    <string name="super_mega_text">Супер мега текст</string>
+    <string name="navigate">Navigate</string>
 </resources>
