@@ -4,4 +4,6 @@
     <string name="hint">Подсказка</string>
     <string name="super_mega_text">Супер мега текст</string>
     <string name="navigate">Navigate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

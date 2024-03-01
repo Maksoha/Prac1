@@ -4,14 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity2">
+    tools:context=".SecondFragment">
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/result_text"/>
+        android:layout_height="100dp"
+        android:id="@+id/result_text"
+        android:text="null"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="navigate back"
         android:id="@+id/button_back"/>
+
 </LinearLayout>

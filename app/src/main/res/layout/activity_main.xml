@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="@dimen/vertical_margin"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/navigate_button"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/navigate"
-        android:onClick="onButtonClick" />
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/vertical_margin"/>
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/image_view_height"
-        android:src="@drawable/ryabchiki"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <include
-        android:id="@+id/constraint_layout"
-        layout="@layout/constraint_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <include
-        android:id="@+id/relative_layout"
-        layout="@layout/relative_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
