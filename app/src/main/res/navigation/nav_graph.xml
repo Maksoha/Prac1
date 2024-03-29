@@ -7,24 +7,16 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.prac1.MainFragment"
+        android:name="com.example.prac1.ui.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_listViewFragment"
-            app:destination="@id/listViewFragment" />
         <action
             android:id="@+id/action_mainFragment_to_recycleViewFragment"
             app:destination="@id/recycleViewFragment" />
     </fragment>
     <fragment
-        android:id="@+id/listViewFragment"
-        android:name="com.example.prac1.ListViewFragment"
-        android:label="fragment_list_view"
-        tools:layout="@layout/fragment_list_view" />
-    <fragment
         android:id="@+id/recycleViewFragment"
-        android:name="com.example.prac1.RecyclerViewFragment"
+        android:name="com.example.prac1.ui.fragments.RecyclerViewFragment"
         android:label="fragment_recycle_view"
         tools:layout="@layout/fragment_recycler_view" />
 </navigation>

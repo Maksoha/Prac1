@@ -4,19 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainFragment">
+    tools:context=".ui.fragments.MainFragment">
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/navigate_to_list_view_button"
+        android:id="@+id/navigate_to_cats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Перейти на ListView"
+        android:text="Перейти к котикам"
         android:layout_margin="24dp"/>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/navigate_to_recycler_view_button"
+        android:id="@+id/navigate_to_dogs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:text="Перейти на RecyclerView"/>
+        android:text="Перейти к собачкам"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/notification_button"
         android:layout_width="match_parent"
