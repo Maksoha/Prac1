@@ -13,10 +13,17 @@
         <action
             android:id="@+id/action_mainFragment_to_recycleViewFragment"
             app:destination="@id/recycleViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_animalsFragment"
+            app:destination="@id/animalsFragment" />
     </fragment>
     <fragment
         android:id="@+id/recycleViewFragment"
         android:name="com.example.prac1.ui.fragments.RecyclerViewFragment"
         android:label="fragment_recycle_view"
         tools:layout="@layout/fragment_recycler_view" />
+    <fragment
+        android:id="@+id/animalsFragment"
+        android:name="com.example.prac1.ui.fragments.AnimalsFragment"
+        android:label="AnimalsFragment" />
 </navigation>

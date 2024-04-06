@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.prac1.databinding.FragmentRecyclerViewBinding;
@@ -30,7 +31,7 @@ public class RecyclerViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        viewViewModel = new RecyclerViewViewModel();
+        viewViewModel = new ViewModelProvider(requireActivity()).get(RecyclerViewViewModel.class);
 
         binding = FragmentRecyclerViewBinding.inflate(inflater, container, false);
         return binding.getRoot();
@@ -41,16 +42,19 @@ public class RecyclerViewFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         String data = getArguments().getString("key");
-        binding.title.setText(data);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         ImageTextAdapter adapter = new ImageTextAdapter();
         binding.recyclerView.setAdapter(adapter);
         if (data == "dogs") {
             viewViewModel.getDogsData().observe(getViewLifecycleOwner(), listData ->
                     adapter.updateList(listData));
+            viewViewModel.getDogTitle().observe(getViewLifecycleOwner(), title ->
+                    binding.title.setText(title));
         } else if (data == "cats") {
             viewViewModel.getCatsData().observe(getViewLifecycleOwner(), listData ->
                     adapter.updateList(listData));
+            viewViewModel.getCatTitle().observe(getViewLifecycleOwner(), title ->
+                    binding.title.setText(title));
         }
     }
 }

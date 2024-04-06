@@ -18,9 +18,15 @@
         android:layout_margin="24dp"
         android:text="Перейти к собачкам"/>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/notification_button"
+        android:id="@+id/color_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:text="Получить уведомление"/>
+        android:text="Поменять цвет"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigate_to_animals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Перейти к животным"/>
 </LinearLayout>
